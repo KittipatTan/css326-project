@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Spytifor - Music Streaming Platform</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <button class="popup-bt">
+            <svg class="logo-user">
+                <use href="img/logo.svg#logo-user" />
+            </svg>
+        </button>
+    </header>
+    <nav>
+        <ul class="nav-bar">
+            <div id="nav-main-box" class="nav-box">
+                <li id="logo-home" class="nav-item">
+                    <svg class="logo-spytifor-home">
+                        <use href="img/logo.svg#logo-spytifor-white-text" />
+                    </svg>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-logo">
+                            <use href="img/logo.svg#logo-home-active"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-logo">
+                            <use href="img/logo.svg#logo-search"/>
+                        </svg>
+                        Search
+                    </a>
+                </li>
+            </div>
+            <div class="nav-box">
+                <li class="nav-item">
+                    <button class="nav-button">
+                        <svg class="nav-logo">
+                            <use href="img/logo.svg#logo-library"/>
+                        </svg>
+                        Your Library
+                    </button>
+                    <button id="add-playlist-bt" class="nav-button">
+                        <span class="add-bt"></span>
+                        <span class="add-bt"></span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-logo">
+                            <use href="img/logo.svg#logo-likedsongs"/>
+                        </svg>
+                        Liked Songs
+                    </a>
+                </li>
+                <!-- query user's playlist from database -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-logo">
+                            <use href="img/logo.svg#logo-playlist"/>
+                        </svg>
+                        My Playlist 
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <h3 class="topic">Spytifor Playlists</h3>
+        <div class="playlist-container">
+            <!--query playlists from database-->
+            <div class="playlist-card">
+                <img class="playlist-card-img" src="" alt="">
+                <p class="playlist-card-title">Playlist title</p>
+                <p class="playlist-card-description">Playlist Description</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>For educational purpose only | Project of CSS325 Database programming</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+:root {
+    --bg-color: #000000;
+    --sub-bg-color: #121212;
+    --header-bg-color: #090909;
+    --spytifor-color: #067DE1;
+    --grey-color: #A7A7A7;
+    --white-color: #FFFFFF;
+
+    color: white;
+    background-color: var(--bg-color);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "nav header"
+                         "nav main"
+                         "nav footer";
+    grid-template-rows: 1fr 10fr 2fr;
+    grid-template-columns: 1fr 5fr;
+    gap: 0.81rem;
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color: var(--header-bg-color);
+    border-radius: 7px;
+    /* border: 1px solid; */
+}
+
+nav {
+    grid-area: nav;
+    height: 100%;
+    min-width: max-content;
+    font-weight: bold;
+    font-size: 1.125rem;
+    /* border: 1px solid; */
+}
+
+main {
+    grid-area: main;
+    padding: 2.56rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: var(--sub-bg-color);
+    /* border: 1px solid; */
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 1.25rem;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-color);
+    font-size: 0.75rem;
+    background-color: var(--sub-bg-color);
+    /* border: 1px solid; */
+}
+
+.logo-spytifor-home {
+    width: 9rem;
+    height: 2.5rem;
+}
+
+.nav-bar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    /* border: 2px solid red; */
+}
+
+#nav-main-box {
+    height: max-content;
+}
+
+.nav-box {
+    background-color: var(--sub-bg-color);
+    border-radius: 7px;
+    padding: 18px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+
+#logo-home {
+    padding: 0;
+}
+
+#add-playlist-bt {
+    margin-left: auto;
+    margin-right: 7px;
+    position: relative;
+}
+
+#add-playlist-bt span:nth-child(1) {
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.add-bt {
+    width: 12px;
+    height: 3px;
+    background-color: var(--grey-color);
+}
+
+.nav-item {
+    margin-bottom: 1.25rem;
+    padding-left: 8px;
+    display: flex;
+    overflow: auto;
+    color: var(--grey-color);
+    /* border: 1px solid; */
+}
+
+.nav-item.active {
+    color: var(--white-color);
+}
+
+.nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.nav-button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1.2rem;
+}
+
+.nav-link, .nav-button {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    /* border: 1px solid; */
+}
+
+.nav-logo {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 25px;
+    
+    /* border: 1px solid; */
+}
+
+.logo-user {
+    width: 100%;
+    height: 100%;
+}
+
+.popup-bt {
+    width: 2.125rem;
+    height: 2.125rem;
+    float: right;
+    margin: 1.25rem 2.62rem;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+.topic {
+    margin: 0;
+    margin-bottom: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.playlist-container {
+    display: flex;
+    column-gap: 2.13rem;
+    row-gap: 2.13rem;
+    flex-wrap: wrap;
+}
+
+.playlist-card {
+    padding: 1.31rem;
+    width: 11rem;
+    height: 16.5rem;
+    border-radius: 7px;
+    background-color: #191919;
+}
+
+.playlist-card-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--sub-bg-color);
+    border: 0;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.playlist-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.playlist-card-description {
+    color: var(--grey-color);
+}
