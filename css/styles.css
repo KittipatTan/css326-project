@@ -52,7 +52,6 @@ main {
 
 footer {
     grid-area: footer;
-    width: 100%;
     padding: 1.25rem;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;

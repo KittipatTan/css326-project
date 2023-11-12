@@ -18,12 +18,16 @@
 }
 
 .login-main {
-    margin: 3.1rem 16.4rem;
-    padding: 4.5rem 0;
+    margin: 3.1rem auto;
+    padding: 4.5rem 5.45rem;
     display: flex;
     justify-content: center;
     column-gap: 10rem;
     background-color: var(--bg-color);
+}
+
+#register-main {
+    padding: 4.5rem 12rem;
 }
 
 #section-logo {
@@ -47,7 +51,7 @@
 form {
     display: flex;
     flex-direction: column;
-    row-gap: 0.55rem;
+    row-gap: 0.7rem;
     margin: 2.7rem 0;
 }
 
@@ -58,6 +62,12 @@ form {
 
 .form-label {
     font-size: 1rem;
+    font-weight: 700;
+}
+
+.form-sublabel {
+    font-size: 0.7rem;
+    margin: 0;
 }
 
 .form-input {
@@ -67,6 +77,12 @@ form {
     background-color: var(--sub-bg-color);
     color: var(--white-color);
     padding-left: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid var(--white-color);
 }
 
 .form-submit {

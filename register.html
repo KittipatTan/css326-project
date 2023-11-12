@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Spytifor - Music Streaming Platform</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body class="login-page-body">
+    <header class="login-header">
+        <svg class="logo-spytifor-home">
+            <use href="img/logo.svg#logo-spytifor-white-text" />
+        </svg>
+    </header>
+    <main id="register-main" class="login-main">
+        <section id="login-section">
+            <h1 class="form-title">Sign up to start <br> listening</h1>
+            <!-- add action url here -->
+            <form action="" method="post">
+                <label for="email" class="form-label">Email address</label>
+                <input id="email" class="form-input" type="email" name="email" placeholder="Email" required>
+                <label for="pass" class="form-label">Password</label>
+                <input id="pass" class="form-input" type="password" name="pass" placeholder="Password" required>
+                <label for="conpass" class="form-label">Confirm Password</label>
+                <input id="conpass" class="form-input" type="password" name="pass" placeholder="Confirm Password" required>
+                <label for="name" class="form-label">Name</label>
+                <label class="form-sublabel">This name will display on your profile</label>
+                <input id="name" type="text" class="form-input" placeholder="Name" required>
+                <input class="form-submit" type="submit" name="login" value="Sign up">
+            </form>
+            <hr>
+            <p>Already have an account? <a class="form-link" href="login.html">Login here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>For educational purpose only | Project of CSS325 Database programming</p>
+    </footer>
+</body>
+
+</html>
