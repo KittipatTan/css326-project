@@ -28,6 +28,7 @@ header {
     grid-area: header;
     background-color: var(--header-bg-color);
     border-radius: 7px;
+    padding: 1.25rem 2.62rem;
     /* border: 1px solid; */
 }
 
@@ -169,7 +170,6 @@ footer {
     width: 2.125rem;
     height: 2.125rem;
     float: right;
-    margin: 1.25rem 2.62rem;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
