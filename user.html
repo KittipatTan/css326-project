@@ -80,18 +80,42 @@
             </div>
         </ul>
     </nav>
-    <main>
-        <h3 class="topic">Spytifor Playlists</h3>
-        <div class="card-container">
-            <!--query all playlists from database-->
-            <a class="card" href="#">
-                <img class="card-img" src="" alt="">
-                <div class="card-text">
-                    <p class="card-title">Playlist title</p>
-                    <p class="card-description">Playlist creator</p>
+
+    <div id="user-edit-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close-bt" onclick="closeModal()">Close</button>
+            <form action="" method="post">
+                <input class="img-upload" type="file" name="user_img" accept="image/png, image/jpeg">
+                <div class="info-edit">
+                    <input type="text" placeholder="User name" value="" >
                 </div>
-            </a>
+            </form>
         </div>
+    </div>
+
+    <main>
+        <section class="section-info">
+            <!-- query the current logged in user's info -->
+            <img src="" alt="" class="profile-img">
+            <div class="section-name">
+                <p>Profile</p>
+                <h1 id="user-name" onclick="showModal()">User's name</h1>
+                <p>(no) playlists</p>
+            </div>
+        </section>
+        <section class="user-playlist">
+            <h3 class="topic">User Playlists</h3>
+            <div class="card-container">
+            <!-- query all public playlists of this user and display here -->
+                <a class="card" href="#">
+                    <img class="card-img" src="" alt="">
+                    <div class="card-text">
+                        <p class="card-title">Playlist title</p>
+                        <p class="card-description">Playlist creator</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
 
     <div class="music-player">
@@ -101,6 +125,11 @@
     <footer>
         <p>For educational purpose only | Project of CSS325 Database programming</p>
     </footer>
+
+    <script>
+        let modal = document.getElementById("user-edit-modal");
+    </script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

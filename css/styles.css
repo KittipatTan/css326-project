@@ -11,6 +11,7 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    cursor: default;
 }
 
 h1, h2, h3, h4, p {
@@ -35,6 +36,7 @@ header {
     padding: 1.25rem 2.62rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* border: 1px solid; */
 }
 
@@ -77,7 +79,7 @@ footer {
 .search-bar-container {
     display: flex;
     flex-direction: column;
-    width: min-content;
+    width: 100%;
     row-gap: 1rem;
 }
 
@@ -120,12 +122,14 @@ footer {
 
 .search-bar-submit:hover {
     background-image: url(/img/search_logo_black.svg);
-    background-color: #A7A7A7;
+    background-color: #FEFEFE;
 }
 
 .filter-section {
     display: flex;
     column-gap: 12px;
+    flex-wrap: wrap;
+    row-gap: 12px;
 }
 
 .input-filter-radio {
@@ -149,6 +153,17 @@ footer {
 .input-filter-radio:checked + .label-filter {
     background-color: #FEFEFE;
     color: #090909;
+}
+
+.select-filter {
+    background-color: #222222;
+    color: var(--white-color);
+    border-radius: 30px;
+    text-align: center;
+    width: 120px;
+    border: 0;
+    padding: 10px 15px;
+    font-weight: 500;
 }
 
 .logo-spytifor-home {
@@ -254,7 +269,7 @@ footer {
 .popup-bt {
     width: 2.125rem;
     height: 2.125rem;
-    float: right;
+    margin-left: auto;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
@@ -350,8 +365,9 @@ a.card {
     /* background-color: #222222; */
 }
 
-th {
+th, td {
     font-weight: 500;
+    color: var(--grey-color);
 }
 
 .th-song-no {
@@ -396,6 +412,11 @@ th {
 
 .song-title {
     margin-bottom: 7px;
+    color: var(--white-color);
+}
+
+.artist {
+    font-size: 0.85rem;
 }
 
 .td-song-like {
@@ -411,4 +432,97 @@ th {
     /* border: 1px solid;
     border-collapse: collapse; */
 }
+
+.artist-about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+#main-liked-song {
+    background-image: linear-gradient(180deg, rgb(76, 55, 134), var(--sub-bg-color), var(--sub-bg-color));
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
+}
+
+.section-info {
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.profile-img {
+    width: 12.4rem;
+    height: 12.4rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #090909;
+}
+
+.section-name {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.section-name h1 {
+    font-size: 3.5rem;
+}
+
+#user-name {
+    cursor: pointer;
+}
+
+.user-playlist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.playlist-img {
+    width: 12.4rem;
+    height: 12.4rem;
+    aspect-ratio: 1/1;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    box-shadow: 0px 0px 40px -8px #090909;
+}
+
+.liked-song-img {
+    background-image: linear-gradient(135deg, #6934FF, #C7E9D7);
+}
+
+.playlist-owner {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.info-modify {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--grey-color)
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #121212;
+    margin: auto;
+    width: 30.75rem;
+    height: 20.5rem;
+    padding: 1.35rem;
+}
+
+.modal-content .modal-close-bt {
+    float: right;
+    cursor: pointer;
+}
+
 
