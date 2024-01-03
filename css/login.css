@@ -11,19 +11,25 @@
     grid-template-rows: 1fr 8fr 1fr;
     row-gap: 0;
     margin: 0;
+    position: relative;
 }
 
 .login-header {
     padding: 1.25rem;
 }
 
-.login-main {
+#login-main, #register-main {
     margin: 3.1rem auto;
     padding: 4.5rem 5.45rem;
     display: flex;
     justify-content: center;
     column-gap: 10rem;
     background-color: var(--bg-color);
+}
+
+#login-main {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #register-main {
@@ -108,3 +114,9 @@ form {
     color: var(--white-color);
 }
 
+p#p-pass-compare {
+    color: red;
+    display: none;
+    font-size: 0.7rem;
+    margin: 0;
+}

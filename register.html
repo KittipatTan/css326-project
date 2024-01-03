@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -16,29 +17,45 @@
             <use href="img/logo.svg#logo-spytifor-white-text" />
         </svg>
     </header>
-    <main id="register-main" class="login-main">
+    <main id="register-main">
         <section id="login-section">
             <h1 class="form-title">Sign up to start <br> listening</h1>
-            <!-- add action url here -->
-            <form action="" method="post">
+            
+            <form action="register.php" method="post">
                 <label for="email" class="form-label">Email address</label>
                 <input id="email" class="form-input" type="email" name="email" placeholder="Email" required>
                 <label for="pass" class="form-label">Password</label>
-                <input id="pass" class="form-input" type="password" name="pass" placeholder="Password" required>
+                <input id="pass" class="form-input" type="password" name="pass" placeholder="Password" onkeyup="compare_pass()" required>
                 <label for="conpass" class="form-label">Confirm Password</label>
-                <input id="conpass" class="form-input" type="password" name="pass" placeholder="Confirm Password" required>
+                <input id="conpass" class="form-input" type="password" name="conpass" placeholder="Confirm Password" onkeyup="compare_pass()" required>
+                <p id="p-pass-compare">Passwords do not match</p>
                 <label for="name" class="form-label">Name</label>
                 <label class="form-sublabel">This name will display on your profile</label>
-                <input id="name" type="text" class="form-input" placeholder="Name" required>
-                <input class="form-submit" type="submit" name="login" value="Sign up">
+                <input id="name" type="text" class="form-input" placeholder="Name" required name="username">
+                <input id="signup" class="form-submit" type="submit" name="signup" value="Sign up">
             </form>
+            
             <hr>
-            <p>Already have an account? <a class="form-link" href="login.html">Login here</a></p>
+            <p>Already have an account? <a class="form-link" href="login.php">Login here</a></p>
         </section>
     </main>
     <footer>
         <p>For educational purpose only | Project of CSS325 Database programming</p>
     </footer>
+
+    <script>
+        let signup_bt = document.getElementById("signup");
+        let compare_pass = () => {
+            if (document.getElementById("pass").value == document.getElementById("conpass").value) {
+                document.getElementById("p-pass-compare").style.display = "none";
+                signup_bt.removeAttribute("disabled");
+            } else {
+                document.getElementById("p-pass-compare").style.display = "block";
+                signup_bt.setAttribute("disabled", "");
+            }
+        }
+    
+    </script>
 </body>
 
 </html>
