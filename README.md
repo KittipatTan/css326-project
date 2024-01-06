@@ -6,6 +6,14 @@ Spytifor, the music streaming platform project, is a web-based application that 
 ### Development
 - PHP, HTML, CSS, JavaScript, SQL, MAMP
 
+### Preview
+
+<img src="preview_pic/home_page.png" alt="screenshot of the home page"/>
+
+<img src="preview_pic/search_page.png" alt="screenshot of the searching page"/>
+
+<img src="preview_pic/login_page.png" alt="screenshot of the login page"/>
+
 ### Fundamental functionalities
 **User**
 - Register
@@ -27,7 +35,7 @@ Spytifor, the music streaming platform project, is a web-based application that 
 - Delete music, admin's playlist, genre, and artist
 
 **Superadmin**
-- Have all admin privilege
+- Have all admin privileges
 - Manage user's role
 
 ### Before use
