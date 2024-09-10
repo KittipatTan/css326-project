@@ -68,6 +68,11 @@ GRANT SELECT ON `spytifor`.`music` TO 'spytiforuser'@'%'
 GRANT SELECT, INSERT, DELETE ON `spytifor`.`playlist_music` TO 'spytiforuser'@'%'
 ```
 
+## Contributors
+- [kittipattan](https://github.com/kittipattan)
+- [Jamesprp](https://github.com/Jamesprp)
+- [PakaponRattanasrisuk](https://github.com/PakaponRattanasrisuk)
+
 ## Related Course
 CSS326 Database programming Laboratory
 
